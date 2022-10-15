@@ -20,6 +20,18 @@ body{
     margin:8%;
     gap:.5rem;
 }
+.desktop{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100;
+    margin:8%;
+    gap:.5rem;
+
+}
 
 .nav-header-logo{
     position: relative;
@@ -29,6 +41,7 @@ body{
     background-repeat: no-repeat;
     align-self: flex-start;
     margin: 0;
+
 }
 .product-mockups{
     position: relative;
@@ -88,8 +101,70 @@ button{
 
 }
 .attribution a{
-text-decoration-style: none;
-color:inherit
+    text-decoration: none;
+    color:inherit;
 }
+a:link{
+}
+a:visited{
+    color: #aeaeae ;
+}
+a:hover{
+    color:#e4e4e4;
+}
+a:active{
+}
+.desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+@media screen and (min-width: 700px) {
+    body{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: flex-start;
+        margin: auto;
+        width: 90vw;
+        height: 90vh;
+        gap: 30px;
+    }
+    body img{
+        display: block;
+    }
+    .desktop{
+        position: relative;
+        height: auto;
+        width:50vw;
+        /* max-width: 472px; */
+    }
+ .side-2, h1,p,button{
+    margin-left:0;
+    margin-right:0;
+    align-items:flex-start;
+    text-align: start;
+ }
+button{
+    text-align: center;
+    width: 25%;
+}
+   .socialmedia-links{
+    align-self: flex-start;
 
-}
+   }
+   .side-2 h1{
+    max-width: 300px;
+   }
+   .side-1{
+    max-width: 630px ;
+   }
+   .side-2{
+    max-width: 630px;
+   }
+   
+}   
+
