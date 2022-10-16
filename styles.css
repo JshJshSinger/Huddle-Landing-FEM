@@ -1,3 +1,12 @@
+/* 
+---------Table of Contents------------
+--1 base(mobile)
+    1.1 buttons
+    1.2 links
+--2 desktop
+ */
+
+
 *{
     padding:0;
     margin:0;
@@ -10,15 +19,22 @@ body{
     background-color:  hsl(257, 40%, 49%) ;
     background-size:auto;
     background-repeat: no-repeat;
+    margin:9.5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-content{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: auto;
     width: 100;
-    margin:8%;
+    height: auto;
     gap:.5rem;
+    border: 1px solid black
 }
 .desktop{
     display:flex;
@@ -28,45 +44,46 @@ body{
     align-content: center;
     height: auto;
     width: 100;
-    margin:8%;
-    gap:.5rem;
+
 
 }
-
+header-nav{
+    display: block;
+}
 .nav-header-logo{
     position: relative;
-    height: 1.9rem;
+    height: 2rem;
     width: auto;
     background-size: auto;
     background-repeat: no-repeat;
-    align-self: flex-start;
-    margin: 0;
 
 }
 .product-mockups{
     position: relative;
     height: auto;
     width:100%;
-    background-size: auto;
     background-repeat: no-repeat;
-    margin: 52px auto;
+    margin:16.5% 0;
 }
 h1{
     font-family: poppins;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
-    line-height: 2.25rem;
+    line-height: 3rem;
     color: white;
+
 }
 p{
     color: white;
     font-family: open sans;
     font-weight: 400;
+    line-height: 1.8rem;
     text-align: center;
-    margin:1.5%;
+    margin:0%;
     margin-top:1rem;
 }
+/* ----------button------------ */
 button{
     margin: 20px;
     height: 40px;
@@ -75,7 +92,7 @@ button{
     border: none;
     color:purple
 }
-
+/* -----------links------------- */
 .socialmedia-links{
     display: flex;
     justify-content: center;
@@ -85,11 +102,6 @@ button{
     gap:1.2rem;
     margin:0 auto;
     margin-top: 15%;
-
-
-
-    
-    
 }
 .socialmedia-links img{
     aspect-ratio: 1;
@@ -100,11 +112,14 @@ button{
  
 
 }
-.attribution a{
+.attribution *{
     text-decoration: none;
     color:inherit;
+
 }
 a:link{
+    text-decoration: none;
+    color:inherit;
 }
 a:visited{
     color: #aeaeae ;
@@ -114,57 +129,99 @@ a:hover{
 }
 a:active{
 }
-.desktop{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-}
-@media screen and (min-width: 700px) {
+
+
+/* -------------2 desktop------------ */
+@media screen and (min-width: 900px) {
     body{
+        background-image:url("images/bg-desktop.svg") ;
+        background-color:  hsl(257, 40%, 49%) ;
+        background-size:cover;
+        margin: 3% 5%;
+        flex-direction: column;
+        
+        }
+    .nav-header-logo{
+        position: relative;
+        height: 3.2rem;
+        width: auto;
+        background-size: auto;
+        background-repeat: no-repeat;
+    
+    }
+
+    .main-content{
+        display:flex;
         flex-direction: row;
         justify-content: center;
-        align-content: center;
-        align-items: flex-start;
-        margin: auto;
-        width: 90vw;
-        height: 90vh;
-        gap: 30px;
+   
+        gap:2rem;
+
     }
-    body img{
-        display: block;
-    }
-    .desktop{
+
+    .product-mockups{
         position: relative;
         height: auto;
-        width:50vw;
-        /* max-width: 472px; */
+        width:100%;
+        margin:0 0;
+        margin-top: 10%;
+        background-size: auto;
+        background-repeat: no-repeat;
     }
- .side-2, h1,p,button{
-    margin-left:0;
-    margin-right:0;
-    align-items:flex-start;
-    text-align: start;
- }
-button{
-    text-align: center;
-    width: 25%;
-}
-   .socialmedia-links{
-    align-self: flex-start;
+
+    button{
+        align-self: flex-start;
+        text-align: center;
+        width: 50%;
+        margin:0;
+    }
+
+   .side-1{
+        flex:1;
+        min-width: 50%;
 
    }
-   .side-2 h1{
-    max-width: 300px;
-   }
-   .side-1{
-    max-width: 630px ;
-   }
    .side-2{
-    max-width: 630px;
+    display: flex;
+    flex-direction: column;
+        flex:1;
+        gap:25px;
+        box-sizing: border-box;
+        padding-bottom:3%;
+
+    }
+   .side-2 h1{
+        /* max-width: 420px; */
+        font-size: 2.5rem;
+        line-height: auto;
    }
-   
+   .side-2 h1, p{
+        text-align: left;
+        align-self: flex-start;
+   }
+   p{
+    margin-top:0rem;
+   }
+  
+}
+.socialmedia-links img{
+    /* align-self: flex-start; */
+    aspect-ratio: 1;
+    outline: 1px black solid;
+    outline-offset: 5px;
+    border-radius: 100%;
+    filter:invert(100%);
+ 
+
+}
+.socialmedia-links{
+    display: flex;
+    justify-content: flex-end;
+    /* position: relative; */
+    height: auto;
+    width: .85rem;
+    gap:1.2rem;
+    margin:0 0;
+    /* margin-top: 15%; */
 }   
 
