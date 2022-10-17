@@ -17,11 +17,28 @@
 body{
     background-image:url("images/bg-mobile.svg") ;
     background-color:  hsl(257, 40%, 49%) ;
-    background-size:auto;
-    background-repeat: no-repeat;
-    margin:9.5%;
+    /* height: 100vh; */
+    /* width: auto; */
+    color: hsl(300, 69%, 71%);
+    background-size:cover;
+    margin: 3% 5%;
+    /* height: 100vh;
+    width: auto; */
+    flex-direction: column;
+
+    margin:9.0%;
     display: flex;
     flex-direction: column;
+
+
+    background-image:url("images/bg-mobile.svg") ;
+    background-color:  hsl(257, 40%, 49%) ;
+    background-size:cover;
+    margin: 3% 5%;
+    height: 100vh;
+    width: auto;
+    flex-direction: column;
+    
 
 }
 
@@ -34,7 +51,7 @@ body{
     width: 100;
     height: auto;
     gap:.5rem;
-    border: 1px solid black
+    /* border: 1px solid black */
 }
 .desktop{
     display:flex;
@@ -63,18 +80,21 @@ header-nav{
     height: auto;
     width:100%;
     background-repeat: no-repeat;
-    margin:16.5% 0;
+    margin:10% 0;
 }
-h1{
+
+.side-2 h1{
     font-family: poppins;
     font-weight: 600;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 1.5rem;
     color: white;
 
 }
-p{
+.main-content{
     color: white;
     font-family: open sans;
     font-weight: 400;
@@ -93,12 +113,13 @@ button{
     color:purple
 }
 /* -----------links------------- */
+
 .socialmedia-links{
     display: flex;
     justify-content: center;
-    /* position: relative; */
-    height: auto;
-    width: .85rem;
+    position: relative;
+    height: .85rem;
+    /* width: .85rem; */
     gap:1.2rem;
     margin:0 auto;
     margin-top: 15%;
@@ -112,10 +133,10 @@ button{
  
 
 }
-.attribution *{
+.attribution {
     text-decoration: none;
     color:inherit;
-
+    padding-top: 5%;
 }
 a:link{
     text-decoration: none;
@@ -138,6 +159,8 @@ a:active{
         background-color:  hsl(257, 40%, 49%) ;
         background-size:cover;
         margin: 3% 5%;
+        height: 100vh;
+        width: auto;
         flex-direction: column;
         
         }
@@ -153,9 +176,9 @@ a:active{
     .main-content{
         display:flex;
         flex-direction: row;
-        justify-content: center;
+        /* justify-content: center; */
    
-        gap:2rem;
+        gap:3.5rem;
 
     }
 
@@ -184,16 +207,16 @@ a:active{
    .side-2{
     display: flex;
     flex-direction: column;
-        flex:1;
-        gap:25px;
-        box-sizing: border-box;
-        padding-bottom:3%;
+    flex:1;
+    gap:25px;
+    box-sizing: border-box;
+    padding-bottom:3%;
 
     }
    .side-2 h1{
         /* max-width: 420px; */
         font-size: 2.5rem;
-        line-height: auto;
+        line-height: 3.8rem;
    }
    .side-2 h1, p{
         text-align: left;
@@ -203,25 +226,15 @@ a:active{
     margin-top:0rem;
    }
   
-}
-.socialmedia-links img{
-    /* align-self: flex-start; */
-    aspect-ratio: 1;
-    outline: 1px black solid;
-    outline-offset: 5px;
-    border-radius: 100%;
-    filter:invert(100%);
- 
-
-}
-.socialmedia-links{
+   .socialmedia-links{
     display: flex;
     justify-content: flex-end;
-    /* position: relative; */
-    height: auto;
-    width: .85rem;
-    gap:1.2rem;
-    margin:0 0;
-    /* margin-top: 15%; */
-}   
+    padding-right: 5px;
+    margin-top: 3%;
+   }
+   .attribution{
+    padding-top: 1%;
+    text-align: right;
+   }
 
+}
