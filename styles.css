@@ -126,10 +126,12 @@ button{
     color:inherit;
     padding-top: 5%;
     text-align: center; 
+    font-size: 11px;
 }
 a:link{
     text-decoration: none;
     color:inherit;
+    color: hsl(228, 45%, 44%);
 }
 a:visited{
     color: #aeaeae ;
@@ -142,7 +144,7 @@ a:active{
 
 
 /* -------------2 desktop------------ */
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 800px) {
     body{
         background-image:url("images/bg-desktop.svg") ;
         background-color:  hsl(257, 40%, 49%) ;
@@ -151,6 +153,8 @@ a:active{
         margin: 3% 5%;
         height: 100vh;
         width: auto;
+        max-width: 1140px;
+
         flex-direction: column;
         
         }
