@@ -15,26 +15,14 @@
     font-family: 'Poppins',     sans-serif;
 }
 body{
-    background-image:url("images/bg-mobile.svg") ;
-    background-color:  hsl(257, 40%, 49%) ;
-    /* height: 100vh; */
-    /* width: auto; */
-    color: hsl(300, 69%, 71%);
-    background-size:cover;
-    margin: 3% 5%;
-    /* height: 100vh;
-    width: auto; */
     flex-direction: column;
-
-    margin:9.0%;
     display: flex;
     flex-direction: column;
-
-
     background-image:url("images/bg-mobile.svg") ;
     background-color:  hsl(257, 40%, 49%) ;
-    background-size:cover;
-    margin: 3% 5%;
+    background-size: contain;
+background-repeat: no-repeat;
+    margin: 8% 8%;
     height: 100vh;
     width: auto;
     flex-direction: column;
@@ -137,6 +125,7 @@ button{
     text-decoration: none;
     color:inherit;
     padding-top: 5%;
+    text-align: center; 
 }
 a:link{
     text-decoration: none;
@@ -153,11 +142,12 @@ a:active{
 
 
 /* -------------2 desktop------------ */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1230px) {
     body{
         background-image:url("images/bg-desktop.svg") ;
         background-color:  hsl(257, 40%, 49%) ;
-        background-size:cover;
+        background-size: cover;
+        background-repeat: no-repeat;
         margin: 3% 5%;
         height: 100vh;
         width: auto;
