@@ -131,7 +131,7 @@ button{
 a:link{
     text-decoration: none;
     color:inherit;
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 43%, 75%);
 }
 a:visited{
     color: #aeaeae ;
@@ -150,10 +150,10 @@ a:active{
         background-color:  hsl(257, 40%, 49%) ;
         background-size: cover;
         background-repeat: no-repeat;
-        margin: 3% 5%;
+        margin: 5% 5%;
         height: 100vh;
         width: auto;
-        max-width: 1140px;
+        /* max-width: 1140px; */
 
         flex-direction: column;
         
@@ -218,6 +218,7 @@ a:active{
    }
    p{
     margin-top:0rem;
+
    }
   
    .socialmedia-links{
