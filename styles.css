@@ -150,11 +150,12 @@ a:active{
         background-color:  hsl(257, 40%, 49%) ;
         background-size: cover;
         background-repeat: no-repeat;
-        margin: 5% 5%;
+        
         height: 100vh;
         width: auto;
-        /* max-width: 1140px; */
-
+        max-width: 1140px;
+        margin: 0 auto; 
+        margin-top: 8%;
         flex-direction: column;
         
         }
@@ -211,6 +212,7 @@ a:active{
         /* max-width: 420px; */
         font-size: 2.5rem;
         line-height: 3.8rem;
+        margin-bottom: 0;
    }
    .side-2 h1, p{
         text-align: left;
